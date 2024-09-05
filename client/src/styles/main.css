@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+body, html {
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4a90e2; /* Modern blue */
+  padding: 1rem 2rem;
+  border-bottom: 3px solid #3b7bbf;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcb05; /* Bright yellow for hover */
+}
+
+/* General Layout styles */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* PostCard styles */
+.post-card {
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners */
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.post-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.post-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button styles */
+.wa-button {
+  background-color: #4a90e2; /* Primary blue color */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wa-button:hover {
+  background-color: #3b7bbf; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Home page specific styles */
+.home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease; /* Subtle animation on load */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Add some basic styles for smooth transitions */
+* {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.post-card {
+  cursor: pointer; /* Change cursor to pointer for clickable elements */
+}
+
+.wa-button {
+  cursor: pointer; /* Change cursor to pointer */
+}
